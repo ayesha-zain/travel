@@ -1,0 +1,641 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    align-items: center;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #212832;
+    font-weight: 500;
+}
+
+.signup-btn {
+    border: 1px solid #212832;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* HERO SECTION */
+.hero {
+    display: flex;
+    align-items: center;
+    padding: 50px 10%;
+    min-height: 80vh;
+}
+
+.hero-text {
+    flex: 1;
+}
+
+.tagline {
+    color: #DF6951; /* Figma Orange */
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.main-heading {
+    font-family: 'Volkhov', serif;
+    font-size: 60px;
+    color: #181E4B;
+    line-height: 1.2;
+    margin-bottom: 30px;
+}
+
+.hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 600px;
+}
+
+.cta-btn {
+    background-color: #F1A501;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 10px;
+    font-weight: 500;
+    cursor: pointer;
+    box-shadow: 0px 10px 20px rgba(241, 165, 1, 0.2);
+}
+
+.services {
+    padding: 100px 10%;
+    text-align: center;
+}
+
+.category-tag {
+    color: #5E6282;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.section-title {
+    font-family: 'Volkhov', serif;
+    font-size: 45px;
+    color: #14183E;
+    margin: 15px 0 60px 0;
+}
+
+.services-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.service-card {
+    background: #fff;
+    padding: 40px 25px;
+    border-radius: 30px;
+    width: 25%;
+    transition: all 0.3s ease;
+}
+
+/* Hover karne par Figma wala effect */
+.service-card:hover {
+    box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.05);
+    transform: translateY(-10px);
+}
+
+.icon-box img {
+    height: 70px;
+    margin-bottom: 25px;
+}
+
+.service-card h3 {
+    font-size: 20px;
+    color: #1E1D4C;
+    margin-bottom: 15px;
+}
+
+.service-card p {
+    color: #5E6282;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* Responsive: Mobile ke liye */
+@media (max-width: 768px) {
+    .services-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .service-card {
+        width: 100%;
+    }
+}
+
+.destinations {
+    padding: 80px 10%;
+    text-align: center;
+}
+
+.dest-header p {
+    color: #5E6282;
+    font-weight: 600;
+}
+
+.dest-header h2 {
+    font-family: 'Volkhov', serif;
+    font-size: 45px;
+    color: #14183E;
+    margin-bottom: 50px;
+}
+
+.dest-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.dest-card {
+    width: 30%;
+    background: #fff;
+    border-radius: 24px;
+    overflow: hidden; /* Taake image corner se bahar na nikle */
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.05);
+    transition: 0.3s;
+}
+
+.dest-card:hover {
+    transform: scale(1.03);
+}
+
+.dest-img-box img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover; /* Image ko box ke hisab se set karega */
+}
+
+.dest-info {
+    padding: 20px 25px;
+    text-align: left;
+    color: #5E6282;
+}
+
+.dest-city {
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    color: #1E1D4C;
+}
+
+.dest-trip {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.booking-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 10%;
+    gap: 50px;
+}
+
+.booking-left {
+    flex: 1;
+}
+
+.sub-heading {
+    color: #5E6282;
+    font-weight: 600;
+}
+
+.main-title {
+    font-family: 'Volkhov', serif;
+    font-size: 45px;
+    color: #14183E;
+    margin: 15px 0 40px 0;
+    line-height: 1.2;
+}
+
+.step {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.step img {
+    width: 45px;
+    height: 45px;
+}
+
+.step-text h4 {
+    color: #5E6282;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.step-text p {
+    color: #5E6282;
+    font-size: 14px;
+    max-width: 350px;
+}
+
+.booking-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.greece-card {
+    width: 100%;
+    max-width: 370px;
+    filter: drop-shadow(0px 100px 80px rgba(0, 0, 0, 0.02)) 
+            drop-shadow(0px 41.7776px 33.4221px rgba(0, 0, 0, 0.0143771)) 
+            drop-shadow(0px 22.3363px 17.869px rgba(0, 0, 0, 0.0119221));
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+    .booking-section {
+        flex-direction: column;
+    }
+}
+.testimonials {
+    display: flex;
+    padding: 100px 10%;
+    gap: 50px;
+    align-items: center;
+}
+
+.test-left { flex: 1; }
+
+.dots { display: flex; gap: 10px; margin-top: 50px; }
+.dot { width: 10px; height: 10px; background: #E5E5E5; border-radius: 50%; }
+.dot.active { background: #39425D; }
+
+.test-right { flex: 1; position: relative; }
+
+.test-card {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02);
+    position: relative;
+    max-width: 500px;
+}
+
+.user-img {
+    position: absolute;
+    top: -35px;
+    left: -35px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+.logos-section {
+    padding: 50px 10%;
+}
+
+.logo-grid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    filter: grayscale(100%); /* Logos ko grey karne ke liye */
+    opacity: 0.5;
+}
+
+.logo-grid img {
+    max-width: 150px;
+    transition: 0.3s;
+}
+
+.logo-grid img:hover {
+    filter: grayscale(0%);
+    opacity: 1;
+}
+
+.subscribe {
+    padding: 80px 10%;
+}
+
+.subscribe-container {
+    background: #F9F7FE; /* Light purple tint */
+    border-radius: 20px 100px 20px 20px;
+    padding: 80px 50px;
+    text-align: center;
+    position: relative;
+}
+
+.send-plane {
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    width: 60px;
+}
+
+.subscribe-container h2 {
+    font-family: 'Poppins', sans-serif;
+    color: #5E6282;
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+
+.input-form {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.input-wrapper {
+    background: white;
+    padding: 15px 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    width: 400px;
+}
+
+.subscribe-btn {
+    background: linear-gradient(180deg, #FF946D 0%, #FF7D68 100%);
+    color: white;
+    border: none;
+    padding: 15px 40px;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* FOOTER SECTION */
+.main-footer {
+    padding: 100px 10% 40px 10%;
+    background-color: #fff;
+}
+
+.footer-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    flex-wrap: wrap; /* Mobile par adjust hone ke liye */
+}
+
+.footer-about {
+    flex: 2; /* Logo wala hissa thoda bada rakha hai */
+    max-width: 250px;
+}
+
+.footer-about .logo {
+    font-size: 44px;
+    color: #181E4B;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.footer-about p {
+    color: #5E6282;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.footer-links {
+    flex: 1;
+    min-width: 120px;
+}
+
+.footer-links h4 {
+    color: #080809;
+    font-size: 21px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.footer-links ul {
+    list-style: none;
+}
+
+.footer-links ul li {
+    color: #5E6282;
+    font-size: 16px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.footer-links ul li:hover {
+    color: #DF6951; /* Orange hover effect */
+}
+
+.footer-apps {
+    flex: 1.5;
+    min-width: 200px;
+}
+
+.socials {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 25px;
+}
+
+.socials span {
+    width: 45px;
+    height: 45px;
+    background: #fff;
+    box-shadow: 0px 2px 10px rgba(0,0,0,0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.footer-apps p {
+    color: #5E6282;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.app-stores {
+    display: flex;
+    gap: 10px;
+}
+
+.app-stores img {
+    height: 35px;
+    cursor: pointer;
+}
+
+.copyright {
+    text-align: center;
+    color: #5E6282;
+    font-size: 14px;
+    margin-top: 80px;
+    border-top: 1px solid #f0f0f0;
+    padding-top: 30px;
+}
+
+/* Responsive Footer for Mobile */
+@media (max-width: 768px) {
+    .footer-grid {
+        flex-direction: column;
+        text-align: center;
+    }
+    .footer-about, .footer-links, .footer-apps {
+        max-width: 100%;
+        margin-bottom: 30px;
+    }
+    .socials, .app-stores {
+        justify-content: center;
+    }
+}/* FOOTER SECTION */
+.main-footer {
+    padding: 100px 10% 40px 10%;
+    background-color: #fff;
+}
+
+.footer-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    flex-wrap: wrap; /* Mobile par adjust hone ke liye */
+}
+
+.footer-about {
+    flex: 2; /* Logo wala hissa thoda bada rakha hai */
+    max-width: 250px;
+}
+
+.footer-about .logo {
+    font-size: 44px;
+    color: #181E4B;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.footer-about p {
+    color: #5E6282;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.footer-links {
+    flex: 1;
+    min-width: 120px;
+}
+
+.footer-links h4 {
+    color: #080809;
+    font-size: 21px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.footer-links ul {
+    list-style: none;
+}
+
+.footer-links ul li {
+    color: #5E6282;
+    font-size: 16px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.footer-links ul li:hover {
+    color: #DF6951; /* Orange hover effect */
+}
+
+.footer-apps {
+    flex: 1.5;
+    min-width: 200px;
+}
+
+.socials {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 25px;
+}
+
+.socials span {
+    width: 45px;
+    height: 45px;
+    background: #fff;
+    box-shadow: 0px 2px 10px rgba(0,0,0,0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.footer-apps p {
+    color: #5E6282;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.app-stores {
+    display: flex;
+    gap: 10px;
+}
+
+.app-stores img {
+    height: 35px;
+    cursor: pointer;
+}
+
+.copyright {
+    text-align: center;
+    color: #5E6282;
+    font-size: 14px;
+    margin-top: 80px;
+    border-top: 1px solid #f0f0f0;
+    padding-top: 30px;
+}
+
+/* Responsive Footer for Mobile */
+@media (max-width: 768px) {
+    .footer-grid {
+        flex-direction: column;
+        text-align: center;
+    }
+    .footer-about, .footer-links, .footer-apps {
+        max-width: 100%;
+        margin-bottom: 30px;
+    }
+    .socials, .app-stores {
+        justify-content: center;
+    }
+}
