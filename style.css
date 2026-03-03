@@ -9,7 +9,6 @@ body {
     overflow-x: hidden;
 }
 
-/* NAVBAR */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -42,7 +41,6 @@ body {
     cursor: pointer;
 }
 
-/* HERO SECTION */
 .hero {
     display: flex;
     align-items: center;
@@ -123,7 +121,6 @@ body {
     transition: all 0.3s ease;
 }
 
-/* Hover karne par Figma wala effect */
 .service-card:hover {
     box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.05);
     transform: translateY(-10px);
@@ -146,17 +143,21 @@ body {
     line-height: 1.6;
 }
 
-/* Responsive: Mobile ke liye */
 @media (max-width: 768px) {
-    .services-container {
+    .navbar {
         flex-direction: column;
-        align-items: center;
+        gap: 15px;
     }
-    .service-card {
-        width: 100%;
+    
+    .hero, .services-container, .dest-container, .booking-section, .footer-grid {
+        flex-direction: column; 
+        text-align: center;
+    }
+
+    .hero-image img, .service-card, .dest-card {
+        width: 100%; 
     }
 }
-
 .destinations {
     padding: 80px 10%;
     text-align: center;
@@ -184,7 +185,7 @@ body {
     width: 30%;
     background: #fff;
     border-radius: 24px;
-    overflow: hidden; /* Taake image corner se bahar na nikle */
+    overflow: hidden; 
     box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.05);
     transition: 0.3s;
 }
@@ -196,7 +197,7 @@ body {
 .dest-img-box img {
     width: 100%;
     height: 350px;
-    object-fit: cover; /* Image ko box ke hisab se set karega */
+    object-fit: cover; 
 }
 
 .dest-info {
@@ -329,7 +330,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    filter: grayscale(100%); /* Logos ko grey karne ke liye */
+    filter: grayscale(100%); 
     opacity: 0.5;
 }
 
@@ -394,7 +395,7 @@ body {
     cursor: pointer;
 }
 
-/* FOOTER SECTION */
+
 .main-footer {
     padding: 100px 10% 40px 10%;
     background-color: #fff;
@@ -404,11 +405,11 @@ body {
     display: flex;
     justify-content: space-between;
     gap: 50px;
-    flex-wrap: wrap; /* Mobile par adjust hone ke liye */
+    flex-wrap: wrap; 
 }
 
 .footer-about {
-    flex: 2; /* Logo wala hissa thoda bada rakha hai */
+    flex: 2; 
     max-width: 250px;
 }
 
@@ -450,7 +451,7 @@ body {
 }
 
 .footer-links ul li:hover {
-    color: #DF6951; /* Orange hover effect */
+    color: #DF6951;
 }
 
 .footer-apps {
@@ -503,7 +504,6 @@ body {
     padding-top: 30px;
 }
 
-/* Responsive Footer for Mobile */
 @media (max-width: 768px) {
     .footer-grid {
         flex-direction: column;
@@ -516,7 +516,8 @@ body {
     .socials, .app-stores {
         justify-content: center;
     }
-}/* FOOTER SECTION */
+}
+
 .main-footer {
     padding: 100px 10% 40px 10%;
     background-color: #fff;
@@ -526,11 +527,11 @@ body {
     display: flex;
     justify-content: space-between;
     gap: 50px;
-    flex-wrap: wrap; /* Mobile par adjust hone ke liye */
+    flex-wrap: wrap; 
 }
 
 .footer-about {
-    flex: 2; /* Logo wala hissa thoda bada rakha hai */
+    flex: 2;
     max-width: 250px;
 }
 
@@ -572,7 +573,7 @@ body {
 }
 
 .footer-links ul li:hover {
-    color: #DF6951; /* Orange hover effect */
+    color: #DF6951; 
 }
 
 .footer-apps {
@@ -625,7 +626,6 @@ body {
     padding-top: 30px;
 }
 
-/* Responsive Footer for Mobile */
 @media (max-width: 768px) {
     .footer-grid {
         flex-direction: column;
@@ -639,3 +639,4 @@ body {
         justify-content: center;
     }
 }
+
